@@ -26,6 +26,8 @@ export const metadata: Metadata = {
     "Mobile",
     "Websites",
     "Galapagos",
+    "sebastian fuertes",
+    "seo"
   ],
   robots: "index, follow",
   openGraph: {

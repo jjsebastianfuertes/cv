@@ -9,9 +9,9 @@ export default function Home() {
         <p className="text-6xl md:text-7xl font-bold text-slate-900">
           Hey there!
         </p>
-        <p className="text-2xl md:text-4xl font-bold text-slate-900 my-6">
+        <h1 className="text-2xl md:text-4xl font-bold text-slate-900 my-6">
           I&apos;m Juan J. Sebastián.
-        </p>
+        </h1>
         <p className="text-xl md:text-2xl my-4">
           {" "}
           A tech-loving problem solver. I lead teams to build amazing products

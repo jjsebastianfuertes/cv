@@ -8,9 +8,6 @@ export default {
   ],
   theme: {
     extend: {
-      gridTemplateColumns: {
-        "2": "repeat(2, minmax(0, 1fr))",
-      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
