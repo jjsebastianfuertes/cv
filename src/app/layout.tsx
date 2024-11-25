@@ -1,17 +1,6 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Lunasima } from "next/font/google";
 import "./globals.css";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
 
 export const metadata: Metadata = {
   title: "Juan J. Sebastian",
@@ -27,7 +16,7 @@ export const metadata: Metadata = {
     "Websites",
     "Galapagos",
     "sebastian fuertes",
-    "seo"
+    "seo",
   ],
   robots: "index, follow",
   openGraph: {
@@ -49,18 +38,18 @@ export const metadata: Metadata = {
   },
 };
 
+const notoSansMono = Lunasima({
+  weight: ["400", "700"],
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+    <html lang="en" className={notoSansMono.className}>
+      <body>{children}</body>
     </html>
   );
 }
