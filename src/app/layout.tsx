@@ -40,6 +40,7 @@ export const metadata: Metadata = {
 
 const notoSansMono = Lunasima({
   weight: ["400", "700"],
+  subsets: ["latin"],
 });
 
 export default function RootLayout({
