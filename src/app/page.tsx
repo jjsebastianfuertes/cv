@@ -77,13 +77,16 @@ export default function Home() {
           />
         </p>
         <p className="text-xl md:text-2xl my-16">
-          Ready to{" "}
-          <CustomLink
-            label="connect"
-            href="mailto:jjsebastianfuertes@gmail.com"
-            target="_self"
-          />
-          ? Let&apos;s build something cool together!
+          <span className="font-bold text-slate-900">
+            Ready to{" "}
+            <CustomLink
+              label="connect"
+              href="mailto:jjsebastianfuertes@gmail.com"
+              target="_self"
+            />
+            ?
+          </span>{" "}
+          Let&apos;s build something cool together!
         </p>
       </section>
       <section className="hidden lg:block lg:h-full lg:relative">
