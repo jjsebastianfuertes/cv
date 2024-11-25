@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -28,9 +27,7 @@ export const metadata: Metadata = {
     "Websites",
     "Galapagos",
   ],
-  viewport: "width=device-width, initial-scale=1.0",
   robots: "index, follow",
-  themeColor: "#ffffff",
   openGraph: {
     title: "Juan J. Sebastian",
     description:
@@ -57,7 +54,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <SpeedInsights />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
