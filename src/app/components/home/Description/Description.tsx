@@ -25,8 +25,13 @@ export const Description = ({ className }: DescriptionProps) => {
         <CustomLink label="Shappi" rel="external" href="https://shappi.com" />,
         and co-founding a few startups:{" "}
         <CustomLink label="Merkat" rel="external" href="https://merkat.store" />
-        , <CustomLink label="FORMA" rel="external" href="#" />,{" "}
-        <CustomLink label="D'Pagando" rel="external" href="#" />, and{" "}
+        ,{" "}
+        <CustomLink
+          label="FS"
+          rel="external"
+          href="https://fsconstructora.com"
+        />
+        , <CustomLink label="D'Pagando" rel="external" href="#" />, and{" "}
         <CustomLink label="TheGuide" rel="external" href="#" />
       </p>
       <p className="text-xl md:text-2xl my-4">
