@@ -26,13 +26,14 @@ export const Description = ({ className }: DescriptionProps) => {
         and co-founding a few startups:{" "}
         <CustomLink label="Merkat" rel="external" href="https://merkat.store" />
         ,{" "}
-        <CustomLink
+        {/* <CustomLink
           label="FS"
           rel="external"
           href="https://fsconstructora.com"
-        />
-        , <CustomLink label="D'Pagando" rel="external" href="#" />, and{" "}
-        <CustomLink label="TheGuide" rel="external" href="#" />
+        /> */}
+        FS, and{" "} TheGuide
+        {/* , <CustomLink label="D'Pagando" rel="external" href="#" />, and{" "} */}
+        {/* <CustomLink label="TheGuide" rel="external" href="#" /> */}
       </p>
       <p className="text-xl md:text-2xl my-4">
         Outside of work, I&apos;m a{" "}
