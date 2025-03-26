@@ -31,7 +31,18 @@ export const Description = ({ className }: DescriptionProps) => {
           rel="external"
           href="https://fsconstructora.com"
         /> */}
-        FS, and{" "} TheGuide
+        <CustomLink
+          label="FS"
+          rel="external"
+          href="https://fsconstructora.com"
+        />
+        ,{" "}
+        <CustomLink
+          label="Live Pahoehoe"
+          rel="external"
+          href="https://livepahoehoe.com"
+        />
+        , and TheGuide
         {/* , <CustomLink label="D'Pagando" rel="external" href="#" />, and{" "} */}
         {/* <CustomLink label="TheGuide" rel="external" href="#" /> */}
       </p>

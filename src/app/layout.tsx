@@ -5,7 +5,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Juan J. Sebastian",
   description:
-    "Explore the professional portfolio and personal projects of Juan J. Sebastian, a passionate Developer & Entrepreneur from Ecuador.",
+    "Explore the professional portfolio and personal projects of Juan J. Sebastian, a passionate Developer & Entrepreneur from Galapagos - Ecuador.",
   keywords: [
     "jjsebastiafuertes",
     "Juan J. Sebastian",
