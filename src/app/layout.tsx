@@ -25,7 +25,7 @@ export const metadata: Metadata = {
       "Explore the professional portfolio and personal projects of Juan J. Sebastian, a passionate Developer & Entrepreneur from Ecuador.",
     type: "website",
     url: "https://www.jjsebastianfuertes.com",
-    images: "https://www.juanjsebastian.com/og-image.jpg",
+    images: "/images/profile.jpg",
   },
   twitter: {
     card: "summary_large_image",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: "Juan J. Sebastian",
     description:
       "Explore the professional portfolio and personal projects of Juan J. Sebastian, a passionate Developer & Entrepreneur from Ecuador.",
-    images: "https://www.jjsebastianfuertes.com/og",
+    images: "/images/profile.jpg",
   },
 };
 
