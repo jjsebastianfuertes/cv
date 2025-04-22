@@ -1,0 +1,18 @@
+{
+  "id": "/?source=turismo-paradise",
+  "name": "Juan J. Sebastian | Developer & Enterpreneur",
+  "short_name": "Juan J. Sebastian",
+  "description": "Explore the professional portfolio and personal projects of Juan J. Sebastian, a passionate Developer & Entrepreneur from Ecuador.",
+  "start_url": "/",
+  "display": "minimal-ui",
+  "display_override": ["standalone", "browser"],
+  "background_color": "#fff",
+  "theme_color": "#09090b",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}
