@@ -24,8 +24,7 @@ export const Description = ({ className }: DescriptionProps) => {
         and{" "}
         <CustomLink label="Shappi" rel="external" href="https://shappi.com" />,
         and co-founding a few startups:{" "}
-        <CustomLink label="Merkat" rel="external" href="https://merkat.store" />
-        ,{" "}
+        <CustomLink label="Quipo" rel="external" href="https://merkat.store" />,{" "}
         {/* <CustomLink
           label="FS"
           rel="external"
