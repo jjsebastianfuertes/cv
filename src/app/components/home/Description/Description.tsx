@@ -24,16 +24,16 @@ export const Description = ({ className }: DescriptionProps) => {
         and{" "}
         <CustomLink label="Shappi" rel="external" href="https://shappi.com" />,
         and co-founding a few startups:{" "}
-        <CustomLink label="Quipo" rel="external" href="https://merkat.store" />,{" "}
-        {/* <CustomLink
-          label="FS"
-          rel="external"
-          href="https://fsconstructora.com"
-        /> */}
         <CustomLink
-          label="FS"
+          label="Quipo"
           rel="external"
-          href="https://fsconstructora.com"
+          href="https://quipo.delivery"
+        />
+        ,{" "}
+        <CustomLink
+          label="Studio Nativa"
+          rel="external"
+          href="https://studionativa.com"
         />
         ,{" "}
         <CustomLink
@@ -41,9 +41,13 @@ export const Description = ({ className }: DescriptionProps) => {
           rel="external"
           href="https://livepahoehoe.com"
         />
-        , and TheGuide
+        , and{" "}
         {/* , <CustomLink label="D'Pagando" rel="external" href="#" />, and{" "} */}
-        {/* <CustomLink label="TheGuide" rel="external" href="#" /> */}
+        <CustomLink
+          label="Turismo Paradise"
+          rel="external"
+          href="https://turismoparadise.com"
+        />
       </p>
       <p className="text-xl md:text-2xl my-4">
         Outside of work, I&apos;m a{" "}
