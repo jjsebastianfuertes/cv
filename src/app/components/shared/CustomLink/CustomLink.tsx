@@ -1,3 +1,7 @@
+"use client";
+
+import { sendGAEvent } from "@next/third-parties/google";
+
 interface CustomLinkProps {
   label: string;
   href: string;
@@ -30,6 +34,10 @@ export const CustomLink = ({
         href={href}
         target={target}
         rel={rel}
+        onClick={() => {
+          console.log("Clicked link:", label);
+          sendGAEvent("event", "buttonClicked", { value: label });
+        }}
       >
         {label}
       </a>

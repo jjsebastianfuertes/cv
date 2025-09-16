@@ -13,11 +13,11 @@ export const Description = ({ className }: DescriptionProps) => {
       <h1 className="text-2xl md:text-4xl font-bold text-slate-900 my-6">
         I&apos;m Juan J. Sebastián.
       </h1>
-      <p className="text-xl md:text-2xl my-4">
+      <h2 className="text-xl md:text-2xl my-4">
         {" "}
         A tech-loving problem solver. I lead teams to build amazing products
         that make a difference.
-      </p>
+      </h2>
       <p className="text-xl md:text-2xl my-4">
         I&apos;ve worked with awesome companies like{" "}
         <CustomLink label="Tipti" rel="external" href="https://tipti.market" />{" "}

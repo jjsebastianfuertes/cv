@@ -2,11 +2,13 @@ import type { Metadata } from "next";
 import { Lunasima } from "next/font/google";
 import "./globals.css";
 import { ProfilePage, WithContext } from "schema-dts";
+import Script from "next/script";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
-  title: "Juan J. Sebastian",
+  title: "Juan J. Sebastian | Entrepreneur & Tech Lead",
   description:
-    "Explore the professional portfolio and personal projects of Juan J. Sebastian, a passionate Developer & Entrepreneur from Galapagos - Ecuador.",
+    "Tech Lead and Entrepreneur guiding teams to build scalable products that solve complex problems and generate meaningful social impact.",
   keywords: [
     "jjsebastiafuertes",
     "Juan J. Sebastian",
@@ -36,6 +38,9 @@ export const metadata: Metadata = {
     description:
       "Explore the professional portfolio and personal projects of Juan J. Sebastian, a passionate Developer & Entrepreneur from Ecuador.",
     images: "/images/profile.jpg",
+  },
+  alternates: {
+    canonical: "https://www.jjsebastianfuertes.com",
   },
 };
 
@@ -164,7 +169,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={notoSansMono.className}>
       <head>
-        <script
+        <GoogleAnalytics gaId="G-4DG2JTLNM9" debugMode />
+        <Script
+          id="profile-jsonld"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
