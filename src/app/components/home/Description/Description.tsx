@@ -9,7 +9,12 @@ interface DescriptionProps {
 function link(href: string, rel?: string, target?: string) {
   function RichLink(chunks: ReactNode) {
     return (
-      <CustomLink label={chunks as string} href={href} rel={rel} target={target} />
+      <CustomLink
+        label={chunks as string}
+        href={href}
+        rel={rel}
+        target={target}
+      />
     );
   }
   return RichLink;
@@ -32,6 +37,8 @@ export const Description = ({ className }: DescriptionProps) => {
           livePahoehoe: link("https://livepahoehoe.com", "external"),
           turismoParadise: link("https://turismoparadise.com", "external"),
           quipo: link("https://quipo.delivery", "external"),
+          roky: link("https://rokytraining.com", "external"),
+          nosLlegoLaTarde: link("https://nosllegolatarde.com", "external"),
         })}
       </p>
       <p className="text-xl md:text-2xl my-4">
@@ -58,7 +65,11 @@ export const Description = ({ className }: DescriptionProps) => {
       <p className="text-xl md:text-2xl my-16">
         <span className="font-bold">
           {t.rich("connect", {
-            connect: link("mailto:info@jjsebastianfuertes.com", undefined, "_self"),
+            connect: link(
+              "mailto:info@jjsebastianfuertes.com",
+              undefined,
+              "_self",
+            ),
           })}
         </span>{" "}
         {t("connectCta")}
