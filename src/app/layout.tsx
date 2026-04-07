@@ -65,9 +65,9 @@ export default function RootLayout({
       givenName: "Juan Jose Sebastian",
       alternateName: "Sebastian Fuertes",
       identifier: "jjsebastianfuertes",
-      jobTitle: "Developer & Entrepreneur",
+      jobTitle: "Entrepreneur & Tech Lead",
       birthDate: "1995-11-06",
-      email: "jjsebastianfuertes@gmail.com",
+      email: "info@jjsebastianfuertes.com",
       telephone: "+593 99 258 3955",
       nationality: {
         "@type": "Country",
@@ -176,7 +176,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body>{children}</body>
+      <body className="bg-background text-foreground" suppressHydrationWarning>{children}</body>
     </html>
   );
 }

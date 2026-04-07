@@ -21,8 +21,8 @@ export const CustomLink = ({
         className="after:block 
         after:w-full
         after:h-[0.6rem]
-      after:bg-yellow-400
-        after:bg-opacity-35
+      after:bg-yellow-400/35
+        dark:after:bg-teal-400/25
         after:absolute
         after:-bottom-[0.1rem]
         after:left-0 

@@ -7,10 +7,10 @@ interface DescriptionProps {
 export const Description = ({ className }: DescriptionProps) => {
   return (
     <section className={className}>
-      <p className="text-6xl md:text-7xl font-bold text-slate-900">
+      <p className="text-6xl md:text-7xl font-bold">
         HEY THERE!
       </p>
-      <h1 className="text-2xl md:text-4xl font-bold text-slate-900 my-6">
+      <h1 className="text-2xl md:text-4xl font-bold my-6">
         I&apos;m Juan J. Sebastián.
       </h1>
       <h2 className="text-xl md:text-2xl my-4">
@@ -20,16 +20,11 @@ export const Description = ({ className }: DescriptionProps) => {
       </h2>
       <p className="text-xl md:text-2xl my-4">
         I&apos;ve worked with awesome companies like{" "}
-        <CustomLink label="Tipti" rel="external" href="https://tipti.market" />{" "}
-        and{" "}
-        <CustomLink label="Shappi" rel="external" href="https://shappi.com" />,
-        and co-founding a few startups:{" "}
-        <CustomLink
-          label="Quipo"
-          rel="external"
-          href="https://quipo.delivery"
-        />
-        ,{" "}
+        <CustomLink label="Tipti" rel="external" href="https://tipti.market" />
+        , <CustomLink label="Shappi" rel="external" href="https://shappi.com" />
+        , and{" "}
+        <CustomLink label="Nexiu" rel="external" href="https://jobs.nexiu.ai" />
+        , and co-founding a few startups:{" "}
         <CustomLink
           label="Studio Nativa"
           rel="external"
@@ -41,12 +36,18 @@ export const Description = ({ className }: DescriptionProps) => {
           rel="external"
           href="https://livepahoehoe.com"
         />
-        , and{" "}
+        ,{" "}
         {/* , <CustomLink label="D'Pagando" rel="external" href="#" />, and{" "} */}
         <CustomLink
           label="Turismo Paradise"
           rel="external"
           href="https://turismoparadise.com"
+        />{" "}
+        and{" "}
+        <CustomLink
+          label="Quipo"
+          rel="external"
+          href="https://quipo.delivery"
         />
       </p>
       <p className="text-xl md:text-2xl my-4">
@@ -65,7 +66,7 @@ export const Description = ({ className }: DescriptionProps) => {
         tech, design, and politics.
       </p>
       <p className="text-xl md:text-2xl my-6">
-        <span className="font-bold text-slate-900">
+        <span className="font-bold">
           Curious about my career journey?
         </span>{" "}
         Check out my{" "}
@@ -75,7 +76,7 @@ export const Description = ({ className }: DescriptionProps) => {
         />
       </p>
       <p className="text-xl md:text-2xl my-6">
-        <span className="font-bold text-slate-900">
+        <span className="font-bold">
           Would like to know more about my stack?
         </span>{" "}
         Dive into my world at{" "}
@@ -90,11 +91,11 @@ export const Description = ({ className }: DescriptionProps) => {
         />
       </p>
       <p className="text-xl md:text-2xl my-16">
-        <span className="font-bold text-slate-900">
+        <span className="font-bold">
           Ready to{" "}
           <CustomLink
             label="connect"
-            href="mailto:jjsebastianfuertes@gmail.com"
+            href="mailto:info@jjsebastianfuertes.com"
             target="_self"
           />
           ?
