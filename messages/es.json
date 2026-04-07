@@ -1,0 +1,23 @@
+{
+  "metadata": {
+    "title": "Juan J. Sebastian | Líder Técnico & Emprendedor",
+    "description": "Líder Técnico y Emprendedor que impulsa equipos a crear productos escalables para resolver problemas complejos y generar impacto social real.",
+    "ogDescription": "Conoce el portafolio profesional y los proyectos de Juan J. Sebastian, Desarrollador y Emprendedor ecuatoriano."
+  },
+  "home": {
+    "greeting": "HOLA!",
+    "intro": "Soy Juan J. Sebastián.",
+    "subtitle": "Me apasiona resolver problemas con tecnología. Lidero equipos para crear productos que realmente hacen la diferencia.",
+    "companies": "He colaborado con empresas como <tipti>Tipti</tipti>, <shappi>Shappi</shappi> y <nexiu>Nexiu</nexiu>, y cofundé varias startups: <studioNativa>Studio Nativa</studioNativa>, <livePahoehoe>Live Pahoehoe</livePahoehoe>, <turismoParadise>Turismo Paradise</turismoParadise> y <quipo>Quipo</quipo>",
+    "hobbies": "Fuera del código, me encanta <bookworm>leer</bookworm>, <ig>viajar</ig> y escribir en <medium>Medium</medium>. También ando por <x>X</x> hablando de tecnología, diseño y política.",
+    "career": "¿Te interesa mi trayectoria profesional?",
+    "careerCta": "Pásate por mi <linkedin>LinkedIn</linkedin>",
+    "stack": "¿Quieres conocer mi stack?",
+    "stackCta": "Explora mi trabajo en <github>Github</github> y <codepen>CodePen</codepen>",
+    "connect": "¿Listo para <connect>conectar</connect>?",
+    "connectCta": "¡Construyamos algo grande juntos!"
+  },
+  "avatar": {
+    "alt": "Foto de perfil de Juan J. Sebastián"
+  }
+}

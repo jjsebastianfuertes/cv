@@ -1,106 +1,67 @@
+import { useTranslations } from "next-intl";
 import { CustomLink } from "../../shared/CustomLink";
+import { ReactNode } from "react";
 
 interface DescriptionProps {
   className?: string | undefined;
 }
 
+function link(href: string, rel?: string, target?: string) {
+  function RichLink(chunks: ReactNode) {
+    return (
+      <CustomLink label={chunks as string} href={href} rel={rel} target={target} />
+    );
+  }
+  return RichLink;
+}
+
 export const Description = ({ className }: DescriptionProps) => {
+  const t = useTranslations("home");
+
   return (
     <section className={className}>
-      <p className="text-6xl md:text-7xl font-bold">
-        HEY THERE!
-      </p>
-      <h1 className="text-2xl md:text-4xl font-bold my-6">
-        I&apos;m Juan J. Sebastián.
-      </h1>
-      <h2 className="text-xl md:text-2xl my-4">
-        {" "}
-        A tech-loving problem solver. I lead teams to build amazing products
-        that make a difference.
-      </h2>
+      <p className="text-6xl md:text-7xl font-bold">{t("greeting")}</p>
+      <h1 className="text-2xl md:text-4xl font-bold my-6">{t("intro")}</h1>
+      <h2 className="text-xl md:text-2xl my-4">{t("subtitle")}</h2>
       <p className="text-xl md:text-2xl my-4">
-        I&apos;ve worked with awesome companies like{" "}
-        <CustomLink label="Tipti" rel="external" href="https://tipti.market" />
-        , <CustomLink label="Shappi" rel="external" href="https://shappi.com" />
-        , and{" "}
-        <CustomLink label="Nexiu" rel="external" href="https://jobs.nexiu.ai" />
-        , and co-founding a few startups:{" "}
-        <CustomLink
-          label="Studio Nativa"
-          rel="external"
-          href="https://studionativa.com"
-        />
-        ,{" "}
-        <CustomLink
-          label="Live Pahoehoe"
-          rel="external"
-          href="https://livepahoehoe.com"
-        />
-        ,{" "}
-        {/* , <CustomLink label="D'Pagando" rel="external" href="#" />, and{" "} */}
-        <CustomLink
-          label="Turismo Paradise"
-          rel="external"
-          href="https://turismoparadise.com"
-        />{" "}
-        and{" "}
-        <CustomLink
-          label="Quipo"
-          rel="external"
-          href="https://quipo.delivery"
-        />
+        {t.rich("companies", {
+          tipti: link("https://tipti.market", "external"),
+          shappi: link("https://shappi.com", "external"),
+          nexiu: link("https://jobs.nexiu.ai", "external"),
+          studioNativa: link("https://studionativa.com", "external"),
+          livePahoehoe: link("https://livepahoehoe.com", "external"),
+          turismoParadise: link("https://turismoparadise.com", "external"),
+          quipo: link("https://quipo.delivery", "external"),
+        })}
       </p>
       <p className="text-xl md:text-2xl my-4">
-        Outside of work, I&apos;m a{" "}
-        <CustomLink
-          label="bookworm"
-          href="https://www.goodreads.com/jjsebastianfuertes"
-        />
-        , a traveler and a writer on{" "}
-        <CustomLink
-          label="Medium"
-          href="https://jjsebastianfuertes.medium.com/"
-        />
-        . You can also find me on{" "}
-        <CustomLink label="X" href="https://x.com/jjsebastianf" /> discussing
-        tech, design, and politics.
+        {t.rich("hobbies", {
+          bookworm: link("https://www.goodreads.com/jjsebastianfuertes"),
+          ig: link("https://www.instagram.com/jjsebastianfuertes/"),
+          medium: link("https://jjsebastianfuertes.medium.com/"),
+          x: link("https://x.com/jjsebastianf"),
+        })}
       </p>
       <p className="text-xl md:text-2xl my-6">
-        <span className="font-bold">
-          Curious about my career journey?
-        </span>{" "}
-        Check out my{" "}
-        <CustomLink
-          label="LinkedIn"
-          href="https://www.linkedin.com/in/jjsebastianfuertes/"
-        />
+        <span className="font-bold">{t("career")}</span>{" "}
+        {t.rich("careerCta", {
+          linkedin: link("https://www.linkedin.com/in/jjsebastianfuertes/"),
+        })}
       </p>
       <p className="text-xl md:text-2xl my-6">
-        <span className="font-bold">
-          Would like to know more about my stack?
-        </span>{" "}
-        Dive into my world at{" "}
-        <CustomLink
-          label="Github"
-          href="https://github.com/jjsebastianfuertes"
-        />{" "}
-        &{" "}
-        <CustomLink
-          label="CodePen"
-          href="https://codepen.io/jjsebastianfuertes"
-        />
+        <span className="font-bold">{t("stack")}</span>{" "}
+        {t.rich("stackCta", {
+          github: link("https://github.com/jjsebastianfuertes"),
+          codepen: link("https://codepen.io/jjsebastianfuertes"),
+        })}
       </p>
       <p className="text-xl md:text-2xl my-16">
         <span className="font-bold">
-          Ready to{" "}
-          <CustomLink
-            label="connect"
-            href="mailto:info@jjsebastianfuertes.com"
-            target="_self"
-          />
-          ?
+          {t.rich("connect", {
+            connect: link("mailto:info@jjsebastianfuertes.com", undefined, "_self"),
+          })}
         </span>{" "}
-        Let&apos;s build something cool together!
+        {t("connectCta")}
       </p>
     </section>
   );

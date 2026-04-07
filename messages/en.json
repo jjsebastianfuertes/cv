@@ -1,0 +1,23 @@
+{
+  "metadata": {
+    "title": "Juan J. Sebastian | Entrepreneur & Tech Lead",
+    "description": "Tech Lead and Entrepreneur guiding teams to build scalable products that solve complex problems and generate meaningful social impact.",
+    "ogDescription": "Explore the professional portfolio and personal projects of Juan J. Sebastian, a passionate Developer & Entrepreneur from Ecuador."
+  },
+  "home": {
+    "greeting": "HEY THERE!",
+    "intro": "I'm Juan J. Sebastián.",
+    "subtitle": "A tech-loving problem solver. I lead teams to build amazing products that make a difference.",
+    "companies": "I've worked with awesome companies like <tipti>Tipti</tipti>, <shappi>Shappi</shappi>, and <nexiu>Nexiu</nexiu>, and co-founding a few startups: <studioNativa>Studio Nativa</studioNativa>, <livePahoehoe>Live Pahoehoe</livePahoehoe>, <turismoParadise>Turismo Paradise</turismoParadise> and <quipo>Quipo</quipo>",
+    "hobbies": "Outside of work, I'm a <bookworm>bookworm</bookworm>, a <ig>traveler</ig> and a writer on <medium>Medium</medium>. You can also find me on <x>X</x> discussing tech, design, and politics.",
+    "career": "Curious about my career journey?",
+    "careerCta": "Check out my <linkedin>LinkedIn</linkedin>",
+    "stack": "Would like to know more about my stack?",
+    "stackCta": "Dive into my world at <github>Github</github> & <codepen>CodePen</codepen>",
+    "connect": "Ready to <connect>connect</connect>?",
+    "connectCta": "Let's build something cool together!"
+  },
+  "avatar": {
+    "alt": "Profile picture of Juan J. Sebastián"
+  }
+}
