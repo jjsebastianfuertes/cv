@@ -38,7 +38,6 @@ export const Description = ({ className }: DescriptionProps) => {
           turismoParadise: link("https://turismoparadise.com", "external"),
           quipo: link("https://quipo.delivery", "external"),
           roky: link("https://rokytraining.com", "external"),
-          nosLlegoLaTarde: link("https://nosllegolatarde.com", "external"),
         })}
       </p>
       <p className="text-xl md:text-2xl my-4">
